@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>QR 無線機</title>
+    <link rel="stylesheet" href="CSS1.css">
+
+</head>
+<body>
+    <h1>国際通信用大型受信機</h1>
+
+    <p></p>
+    <p>画像をクリックすると説明文が出ます。</p>
+
+    <label>
+        <span><img src = "musen.jpg" style="width: 500px; height:400px border-box; margin-left: 100px;"> </span>
+        <input type="checkbox" name="checkbox">
+      <div id="popup">
+        <p>国際電気通信株式会社が戦前から戦後にかけて国際通信を行うために使用した受信機。</p>
+        <p>2台で一組になっている。これは短波をダイバーシティ受信するためである。</p>
+        <p>各受信機に別々のアンテナを接続して両方の受信機の出力を合成して、フェージングの影響を軽減する方式である。</p>
+        <p>製造会社は国際電気(1940年ごろ)と思われているが、型式は不明である。</p>
+        <p>当時の日本の耳となっていた受信機である。</p>
+    </div>
+      </label>
+<h1></h1>
+<p></p>
+      <label>
+      <div id="imageContainer">
+        <img src="musen3.jpg" style="width: 500px; height:400px; border-box; margin-left: 100px;" alt="Your Image" id="mainImage">
+        <input type="checkbox" name="checkbox1">
+        <div id="popup">
+            <p>該当する無線機の説明</p>
+        </div>
+
+        <div id="clickArea"></div>
+        <div id="popup1">
+            <p>クリックした箇所はFrequency Rangeである。（機能の説明）</p>
+        </div>
+        <div id="clickArea1"></div>
+        <div id="popup2">
+            <p>クリックした箇所はMain Tuningである。(機能の説明)</p>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var clickArea = document.getElementById("clickArea");
+            var popup = document.getElementById("popup1");
+    
+            // クリックイベントを追加
+            clickArea.addEventListener("click", function () {
+            // ポップアップを表示
+            popup.style.display = "block";
+
+            // 一定時間後にポップアップを非表示にする例
+            setTimeout(function () {
+                popup.style.display = "none";
+            }, 1500); // 2000ミリ秒（2秒）後に非表示
+        });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var clickArea1 = document.getElementById("clickArea1");
+            var popup = document.getElementById("popup2");
+    
+            // クリックイベントを追加
+            clickArea1.addEventListener("click", function () {
+            // ポップアップを表示
+            popup.style.display = "block";
+
+            // 一定時間後にポップアップを非表示にする例
+            setTimeout(function () {
+                popup.style.display = "none";
+            }, 1500); // 2000ミリ秒（2秒）後に非表示
+        });
+        });
+    </script>
+
+    
+    </label>
+</body>
+</html>

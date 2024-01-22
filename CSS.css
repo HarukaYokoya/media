@@ -1,0 +1,66 @@
+/*popup表示させたいコンテンツのレイアウトと位置*/
+#popup{
+    width:50%;
+    line-height:25px;
+    background:rgb(160, 213, 229);
+    padding:0 4%;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
+  }
+
+  #popup1{
+    width:22%;
+    line-height:25px;
+    background:rgb(100, 213, 229);
+    padding:0 4%;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:75%;
+    left:10%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: transl
+  }
+
+  #popup2{
+    width:50%;
+    line-height:25px;
+    background:rgb(100, 213, 229);
+    padding:0 4%;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:75%;
+    left:75%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: transl
+  }
+
+  label{
+    display:block;
+  }
+
+  label span:hover{
+    cursor:pointer;
+  }
+  input[type="checkbox"]{
+    display:none;
+  }
+  
+  /*checkboxがチェックの状態になったらpopupを表示させる*/
+  input[type="checkbox"]:checked + #popup{
+    display:block;
+  }
+
+  input[type="checkbox"]:checked + #popup1{
+    display:block;
+  }
+
+  input[type="checkbox"]:checked + #popup2{
+    display:block;
+  }

@@ -1,0 +1,94 @@
+/*popup表示させたいコンテンツのレイアウトと位置*/
+#popup{
+    width:300px;
+    line-height:25px;
+    background:rgb(160, 213, 229);
+    padding:0 4%;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:50%;
+    left:60%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
+  }
+
+  #popup1{
+    width:300px;
+    line-height:25px;
+    background:rgb(228, 115, 254);
+    padding:0 4%;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:65%;
+    left:70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: transl
+  }
+
+  #popup2{
+    width:300px;
+    line-height:25px;
+    background:#a497f9;
+    padding:0 4%;
+    box-sizing:border-box;
+    display:none;
+    position:fixed;
+    top:65%;
+    left:70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: transl
+  }
+
+  #imageContainer {
+    position: relative;
+}
+
+#clickArea {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 165px;
+    left: 200px;
+    cursor: pointer;
+}
+
+#clickArea1 {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 165px;
+  left: 415px;
+  cursor: pointer;
+}
+
+  label{
+    display:block;
+  }
+
+  label span:hover{
+    cursor:pointer;
+  }
+  input[type="checkbox"]{
+    display:none;
+  }
+  
+  /*checkboxがチェックの状態になったらpopupを表示させる*/
+  input[type="checkbox"]:checked + #popup{
+    display:block;
+  }
+
+  input[type="checkbox"]:checked + #popup1{
+    display:block;
+  }
+
+  input[type="checkbox"]:checked + #popup2{
+    display:block;
+  }
+
+  a {
+    text-align: center;
+    font-size: x-large;
+    display: block; /* ブロックレベル要素に変更して親要素の幅いっぱいに広がるようにする */
+}
